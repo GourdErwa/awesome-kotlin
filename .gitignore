@@ -1,3 +1,57 @@
-# Project exclude paths
-/.gradle/
+# https://github.com/github/gitignore/
+
+*.class
+**.log
+.settings/
+.svn/
+.myhibernatedata
+.mymetadata
+classes/
 /build/
+/META-INF/
+/bin/
+logs/
+
+# idea
+.idea/*
+**/.settings/
+**/build/*
+target/
+**/target/*
+*/bin/*
+*/out/*
+
+# vs code
+.project
+*/.classpath
+*/.project
+
+# gradle
+**.gradle/
+**gradle/
+
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+
+
+
