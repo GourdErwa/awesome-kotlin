@@ -1,3 +1,3 @@
 
-rootProject.name = "kotlin-advanced"
+rootProject.name = "awesome-kotlin"
 
