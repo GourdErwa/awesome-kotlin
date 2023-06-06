@@ -24,4 +24,19 @@ class `04_Object` {
 
         rentPrice(100, 2, 1) // 5
     }
+
+    class BigBen {                                  //1
+        companion object Bonger {                   //2
+            fun getBongs(nTimes: Int) {             //3
+                for (i in 1..nTimes) {
+                    print("BONG ")
+                }
+            }
+        }
+    }
+
+    @Test
+    fun `Companion Objects`() {
+        BigBen.getBongs(12)                         //4
+    }
 }

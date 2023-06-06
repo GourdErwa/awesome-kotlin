@@ -1,6 +1,5 @@
 package io.gourd.kt.lang
 
-
 /**
  * 构造模式
  * @author Li.Wei by 2023/6/2
@@ -11,7 +10,8 @@ class Car(
     val model: String?,
     val year: Int
 ) {
-    companion object {
+    // 伴生对象，命名不影响使用
+    companion object CarCompanion {
         /**
          * 带接收者的函数类型,这意味着我们需要向函数传递一个Builder类型的实例
          */

@@ -72,6 +72,8 @@ thread and that all threads will see the same value.
 Property delegation can be used for storing properties in a map. This is handy for tasks like parsing JSON
 or doing other "dynamic" stuff.
 
+属性委派可用于在映射中存储属性。这对于解析 JSON 或执行其他 “动态” 操作等任务非常方便。
+
 ```kotlin
 class User(val map: Map<String, Any?>) {
     val name: String by map                // 1

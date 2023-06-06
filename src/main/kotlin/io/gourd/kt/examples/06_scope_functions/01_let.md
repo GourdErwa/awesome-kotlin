@@ -4,6 +4,9 @@ The Kotlin standard library function `let` can be used for scoping and null-chec
 executes the given block of code and returns the result of its last expression.
 The object is accessible inside the block by the reference `it` (by default) or a custom name.
 
+Kotlin 标准库函数 `let` 可用于范围界定和空检查。当对对象调用时，`let` 执行给定的代码块并返回其最后一个表达式的结果。
+该对象可以通过引用 `it`（默认情况下）或自定义名称在块内访问。
+
 ```kotlin
 fun customPrint(s: String) {
     print(s.uppercase())

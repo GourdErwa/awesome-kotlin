@@ -5,6 +5,10 @@ The Kotlin compiler is smart enough to perform type casts automatically in most 
 1. Casts from nullable types to their non-nullable counterparts.
 2. Casts from a supertype to a subtype.
 
+Kotlin 编译器足够智能，在大多数情况下可以自动执行类型转换，包括：
+1. 从可为空类型转换为不可为空的对应项。
+2. 从超类型转换为子类型。
+
 ```kotlin
 import java.time.LocalDate
 import java.time.chrono.ChronoLocalDate

@@ -4,6 +4,8 @@
 by `this`.
 This function is handy for initializing objects.
 
+`apply` 在对象上执行代码块并返回对象本身。在块内部，对象由 `this` 引用。此函数对于初始化对象非常有用。
+
 ```kotlin
 data class Person(var name: String, var age: Int, var about: String) {
     constructor() : this("", 0, "")
