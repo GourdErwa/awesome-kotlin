@@ -6,6 +6,7 @@ The Kotlin compiler is smart enough to perform type casts automatically in most 
 2. Casts from a supertype to a subtype.
 
 Kotlin 编译器足够智能，在大多数情况下可以自动执行类型转换，包括：
+
 1. 从可为空类型转换为不可为空的对应项。
 2. 从超类型转换为子类型。
 
@@ -16,19 +17,19 @@ import java.time.chrono.ChronoLocalDate
 fun main() {
 //sampleStart
     val date: ChronoLocalDate? = LocalDate.now()    // 1
-    
+
     if (date != null) {
         println(date.isLeapYear)                    // 2
     }
-    
+
     if (date != null && date.isLeapYear) {          // 3
         println("It's a leap year!")
     }
-    
+
     if (date == null || !date.isLeapYear) {         // 4
         println("There's no Feb 29 this year...")
     }
-    
+
     if (date is LocalDate) {
         val month = date.monthValue                 // 5
         println(month)

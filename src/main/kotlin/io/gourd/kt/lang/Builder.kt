@@ -8,7 +8,7 @@ package io.gourd.kt.lang
 // 类型安全的构造器
 class Car(
     val model: String?,
-    val year: Int
+    val year: Int,
 ) {
     // 伴生对象，命名不影响使用
     companion object CarCompanion {
@@ -36,7 +36,7 @@ val car = Car.build {
 class Dialog private constructor(
     val title: String,
     val text: String?,
-    val onAccept: (() -> Unit)?
+    val onAccept: (() -> Unit)?,
 ) {
     class Builder(private val title: String) {
         private var text: String? = null

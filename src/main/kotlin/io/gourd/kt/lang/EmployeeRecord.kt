@@ -16,7 +16,7 @@ data class EmployeeRecord(
 data class AddressRecord(
     val firstLine: String = "DEFAULT_ZG",
     val secondLine: String = "DEFAULT_SD",
-    val postCode: String
+    val postCode: String,
 )
 
 fun main() {
